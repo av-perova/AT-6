@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 class SubmitFormTest {
     @Test
-    void () throws InterruptedException {
+    void submitFormSuccess() throws InterruptedException {
         open("http://localhost:9999");
         SelenideElement form = $(".form");
         form.$("[data-test-id=name] input").setValue("Перова Анастасия");
