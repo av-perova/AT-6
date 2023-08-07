@@ -16,6 +16,6 @@ class SubmitFormTest {
         form.$("[data-test-id=phone] input").setValue("+79833333333");
         form.$("[data-test-id=agreement]").click();
         form.$(".button").click();
-        $("[data-test-id=order-success").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success").shouldHave(exactText("Ваша успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 }
